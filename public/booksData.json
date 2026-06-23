@@ -115,5 +115,18 @@
     "tags": ["Suspense", "Psychological"],
     "publisher": "Riverhead Books",
     "yearOfPublishing": 2015
+  },
+  {
+    "bookId": 10,
+    "bookName": "360° Feedback",
+    "author": "Mark R. Edwards and Ann J. Ewen",
+    "image": "https://i.ibb.co.com/gZnGS646/81-DFOJy-jf-L-AC-UF1000-1000-QL80.jpg",
+    "review": "'360° Feedback' explores a comprehensive approach to employee evaluation and performance improvement. The book explains how organizations can gather feedback from supervisors, peers, subordinates, and even customers to provide a complete picture of an employee's strengths and weaknesses. Through practical frameworks and real-world examples, the authors demonstrate how multi-source feedback can improve leadership, communication, and organizational effectiveness. It is an essential resource for managers, HR professionals, and anyone interested in modern performance assessment techniques.",
+    "totalPages": 320,
+    "rating": 4.1,
+    "category": "Business",
+    "tags": ["Management", "Leadership", "Human Resources"],
+    "publisher": "AMACOM",
+    "yearOfPublishing": 1996
   }
 ]
