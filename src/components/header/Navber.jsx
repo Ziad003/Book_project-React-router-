@@ -48,8 +48,8 @@ const Navber = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn mr-4 bg-green-600 text-white">Sign in</a>
-        <a className="btn bg-cyan-600 text-white">Sign Up</a>
+        <a className="btn mr-4 bg-green-600 text-white rounded-lg">Sign in</a>
+        <a className="btn bg-cyan-600 text-white rounded-lg">Sign Up</a>
       </div>
     </div>
   );

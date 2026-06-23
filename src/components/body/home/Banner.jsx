@@ -10,7 +10,7 @@ const Banner = () => {
             <br />
             your bookshelf
           </h1>
-          <button className="btn mt-8 bg-green-600 text-white">
+          <button className="btn mt-8 bg-green-600 text-white rounded-lg">
             View The List
           </button>
         </div>
