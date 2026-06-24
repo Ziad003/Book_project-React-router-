@@ -1,5 +1,6 @@
 import { useState } from "react";
 import img from "../../../assets/81DFOJy-jfL._AC_UF1000,1000_QL80_.jpg";
+import { Link } from "react-router";
 const Banner = () => {
   const [state, setState] = useState(false);
   return (
@@ -19,9 +20,10 @@ const Banner = () => {
             <br />
             your bookshelf
           </h1>
+          <Link to={'/readList'}>
           <button className="btn mt-8 bg-green-600 text-white rounded-lg">
             View The List
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

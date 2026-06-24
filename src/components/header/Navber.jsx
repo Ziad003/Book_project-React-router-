@@ -31,9 +31,13 @@ const Navber = () => {
               <NavLink to={"/"}>Home</NavLink>
             </li>
             <li>
-              <NavLink to={"/listedBooks"}>Listed Books</NavLink>
+              <NavLink to={"/readList"}>Read List</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/about"}>About</NavLink>
             </li>
           </ul>
+            
         </div>
         <a className="btn btn-ghost text-xl font-bold">BookVerse</a>
       </div>
@@ -43,9 +47,13 @@ const Navber = () => {
             <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
-            <NavLink to={"/listedBooks"}>Listed Books</NavLink>
+            <NavLink to={"/readList"}>Read List</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/about"}>About</NavLink>
           </li>
         </ul>
+          
       </div>
       <div className="navbar-end">
         <a className="btn mr-4 bg-green-600 text-white rounded-lg">Sign in</a>
