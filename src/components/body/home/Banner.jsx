@@ -20,10 +20,11 @@ const Banner = () => {
             <br />
             your bookshelf
           </h1>
-          <Link to={'/readList'}>
-          <button className="btn mt-8 bg-green-600 text-white rounded-lg">
-            View The List
-          </button></Link>
+          <Link to={"/readList"}>
+            <button className="btn mt-8 bg-green-600 text-white rounded-lg">
+              View The List
+            </button>
+          </Link>
         </div>
       </div>
     </div>

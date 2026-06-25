@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router";
 import "./Nav.css";
-const Navber = () => {
- 
+const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm navDiv">
       <div className="navbar-start">
@@ -55,15 +54,12 @@ const Navber = () => {
       </div>
       <div className="navbar-end">
         <Link to={"/alert"} state={{ value: "Sign In" }}>
-          <a
-            className="btn px-2 mr-1 md:px-5 md:mr-3 bg-green-600 text-white rounded-lg"
-          >
+          <a className="btn px-2 mr-1 md:px-5 md:mr-3 bg-green-600 text-white rounded-lg">
             Sign in
           </a>
         </Link>
         <Link to={"/alert"} state={{ value: "Sign Up" }}>
-          <a
-            className="btn px-2 md:px-5 bg-cyan-600 text-white rounded-lg">
+          <a className="btn px-2 md:px-5 bg-cyan-600 text-white rounded-lg">
             Sign Up
           </a>
         </Link>
@@ -72,4 +68,4 @@ const Navber = () => {
   );
 };
 
-export default Navber;
+export default Navbar;
