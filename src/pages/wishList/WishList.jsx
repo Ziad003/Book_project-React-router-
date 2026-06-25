@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 const WishList = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="">
       <h3 className="font-bold text-xl text-red-400 text-center my-20">
         WishList is not ready yet for users
       </h3>

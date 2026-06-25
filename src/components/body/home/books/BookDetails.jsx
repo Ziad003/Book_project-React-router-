@@ -69,17 +69,17 @@ const BookDetails = () => {
         </div>
         <div className="pb-5">
           <pre>
-            Number of Pages: <span className="font-bold">{totalPages}</span>
+            Number of Pages: <span className="font-bold">    {totalPages}</span>
           </pre>
           <pre>
-            Publisher: <span className="font-bold">{publisher}</span>
+            Publisher: <span className="font-bold">          {publisher}</span>
           </pre>
           <pre>
             Year of Publishing:{" "}
-            <span className="font-bold">{yearOfPublishing}</span>
+            <span className="font-bold"> {yearOfPublishing}</span>
           </pre>
           <pre>
-            Rating: <span className="font-bold">{rating}</span>
+            Rating: <span className="font-bold">             {rating}</span>
             <FaRegStar className="inline ml-1 relative bottom-0.5"></FaRegStar>
           </pre>
         </div>
