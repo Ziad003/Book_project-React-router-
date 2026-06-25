@@ -37,8 +37,8 @@ const ReadList = () => {
 
   return (
     <>
-      <div className="text-center mt-15 mb-10">
-        <h2 className="font-bold text-xl text-center bg-base-300 inline py-5 px-50 rounded-3xl">
+      <div className="text-center mt-8 mb-5 md:mt-15 md:mb-10">
+        <h2 className="font-bold md:text-xl text-center bg-base-300 inline py-5 px-10 md:px-50 rounded-3xl">
           Read: {readList.length}
         </h2>
       </div>
@@ -66,9 +66,9 @@ const ReadList = () => {
         </TabList>
 
         <TabPanel>
-          <div className="max-w-2/4 mx-auto my-5">
-            {readList.map((b) => (
-              <Book book={b}></Book>
+          <div className="md:max-w-2/4 mx-auto my-5">
+            {readList.map((b, index) => (
+              <Book key={index} book={b}></Book>
             ))}
           </div>
         </TabPanel>

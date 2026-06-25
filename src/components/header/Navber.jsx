@@ -1,7 +1,7 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import "./Nav.css";
-
 const Navber = () => {
+ 
   return (
     <div className="navbar bg-base-100 shadow-sm navDiv">
       <div className="navbar-start">
@@ -37,9 +37,8 @@ const Navber = () => {
               <NavLink to={"/about"}>About</NavLink>
             </li>
           </ul>
-            
         </div>
-        <a className="btn btn-ghost text-xl font-bold">BookVerse</a>
+        <a className="btn btn-ghost text-lg md:text-xl  font-bold">BookVerse</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -53,11 +52,21 @@ const Navber = () => {
             <NavLink to={"/about"}>About</NavLink>
           </li>
         </ul>
-          
       </div>
       <div className="navbar-end">
-        <a className="btn mr-4 bg-green-600 text-white rounded-lg">Sign in</a>
-        <a className="btn bg-cyan-600 text-white rounded-lg">Sign Up</a>
+        <Link to={"/alert"} state={{ value: "Sign In" }}>
+          <a
+            className="btn px-2 mr-1 md:px-5 md:mr-3 bg-green-600 text-white rounded-lg"
+          >
+            Sign in
+          </a>
+        </Link>
+        <Link to={"/alert"} state={{ value: "Sign Up" }}>
+          <a
+            className="btn px-2 md:px-5 bg-cyan-600 text-white rounded-lg">
+            Sign Up
+          </a>
+        </Link>
       </div>
     </div>
   );

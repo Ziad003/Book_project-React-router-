@@ -2,6 +2,10 @@ import { FaRegStar } from "react-icons/fa";
 import { useLoaderData, useNavigate, useParams } from "react-router";
 import { addToStoredDB } from "../../../../addToLocalDB";
 import { toast } from "react-toastify";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 
 const BookDetails = () => {
   const navigate = useNavigate();
@@ -13,6 +17,15 @@ const BookDetails = () => {
 
   const handleMarkAsRead = (id) => {
     const add = addToStoredDB(id);
+
+    if (add) {
+      MySwal.fire({
+        title: "Done",
+        icon: "success",
+        draggable: true,
+      });
+    }
+
     if (add) {
       notify();
     }
@@ -43,8 +56,8 @@ const BookDetails = () => {
     yearOfPublishing,
   );
   return (
-    <div className="card card-side bg-base-100 shadow-sm flex flex-col md:flex-row py-20">
-      <figure className="p-10 bg-base-300 ml-8 rounded-xl flex-1">
+    <div className="card card-side bg-base-100 shadow-sm flex flex-col md:flex-row py-20 mt-5">
+      <figure className="p-10 bg-base-300 md:ml-8 rounded-xl flex-1">
         <img className=" rounded-xl" src={image} alt="Movie" />
       </figure>
       <div className="card-body flex-2">
@@ -69,17 +82,17 @@ const BookDetails = () => {
         </div>
         <div className="pb-5">
           <pre>
-            Number of Pages: <span className="font-bold">    {totalPages}</span>
+            Number of Pages: <span className="font-bold"> {totalPages}</span>
           </pre>
           <pre>
-            Publisher: <span className="font-bold">          {publisher}</span>
+            Publisher: <span className="font-bold"> {publisher}</span>
           </pre>
           <pre>
             Year of Publishing:{" "}
             <span className="font-bold"> {yearOfPublishing}</span>
           </pre>
           <pre>
-            Rating: <span className="font-bold">             {rating}</span>
+            Rating: <span className="font-bold"> {rating}</span>
             <FaRegStar className="inline ml-1 relative bottom-0.5"></FaRegStar>
           </pre>
         </div>
@@ -99,7 +112,10 @@ const BookDetails = () => {
           >
             Add to wishlist
           </button>
-          <button className="btn ml-3" onClick={() => navigate(-1)}>
+          <button
+            className="btn ml-3 mt-2 md:mt-0"
+            onClick={() => navigate(-1)}
+          >
             Go back
           </button>
         </div>

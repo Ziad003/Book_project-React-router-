@@ -5,6 +5,7 @@ import Home from "../components/body/home/Home";
 import BookDetails from "../components/body/home/books/BookDetails";
 import ReadList from "../pages/ReaedList/ReadList";
 import About from "../pages/About";
+import DemoAlert from "../components/DemoAlert";
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         Component: About,
+      },
+      {
+        path: "/alert",
+        Component: DemoAlert,
       },
     ],
   },
